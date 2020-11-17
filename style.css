@@ -1,0 +1,112 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.container {
+  height: 100vh;
+  width: 100vw;
+  background-image: url("ny.jpeg");
+  background-size: cover;
+  background-position: center;
+  overflow-x: hidden;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  font-family: Sans-Serif;
+  flex-direction: column;
+}
+span {
+  font-size: 30px;
+  text-align: center;
+
+}
+
+.countDown {
+
+  font-family: 'Roboto', sans-serif;
+  margin-top: 140px;
+  text-align: center;
+  background: url("img.jpeg");
+  display: flex;
+
+
+}
+.countDown span {
+  padding: 20px;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
+  font-weight: 900;
+}
+.wish {
+  /* color: #ffeaa7; */
+
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  font-family: 'Dancing Script', cursive;
+  position: absolute;
+  top: 15px;
+  font-size: 40px;
+  transition: .2s;
+  text-shadow: 0 0 10px #fff, 0 0 20px #fff,
+  0 0 30px #e60073, 
+  0 0 40px #e60073,
+  0 0 50px #e60073, 
+  0 0 60px #e60073,
+  0 0 70px #e60073;
+}
+.by {
+  font-family: Sans-Serif;
+  position: absolute;
+  top: 70px;
+  font-weight: 900;
+  font-size: 20px;
+  color: #00ffb0;
+  animation: anime2slinear infinite;
+  animation-direction: alternate;
+}
+@keyframes anime {
+  0% {
+    transform: scale(0.7);
+  }
+  100% {
+    transform: scale(1);
+  }
+}
+#user {
+  overflow: hidden;
+  background-size: cover;
+  background-position: center;
+  font-family: Sans-Serif;
+  position: absolute;
+  top: 100px;
+}
+.colon {
+  font-size: 25px;
+
+}
+/* #bg_video{
+  right: 0;
+  bottom: 0;
+  min-width: 100%;
+  min-height: 100%;
+  z-index: -2;
+  position: fixed;
+  object-fit: cover;
+} */
+.quotes {
+  background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5));
+  margin-top: 60px;
+  padding: 10px;
+}
+.quotes p {
+  font-size: 24px;
+
+  font-family: 'Dancing Script', cursive;
+
+}
+.change {
+  position: absolute;
+  bottom: -27px;
+}

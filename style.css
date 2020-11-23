@@ -1,28 +1,39 @@
+@import url('https://fonts.googleapis.com/css2?family=Big+Shoulders+Inline+Text:wght@600&display=swap');
+
+
 * {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
 }
-.container {
+body{
   height: 100vh;
   width: 100vw;
-  background-image: url("ny.jpeg");
+}
+.container {
+  /*
+  background-image: url("ny.jpeg"); */
   background-size: cover;
   background-position: center;
-  overflow-x: hidden;
+  overflow: hidden;
   color: #fff;
   display: flex;
   justify-content: center;
   align-items: center;
   font-family: Sans-Serif;
   flex-direction: column;
+  background: red;
+  z-index: 5;
 }
 span {
   font-size: 30px;
   text-align: center;
 
 }
-
+#song {
+  position: absolute;
+  top: 90;
+}
 .countDown {
 
   font-family: 'Roboto', sans-serif;
@@ -30,13 +41,16 @@ span {
   text-align: center;
   background: url("img.jpeg");
   display: flex;
-
-
+  position: absolute;
+  top: 20%;
 }
 .countDown span {
   padding: 20px;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff, 0 0 30px #e60073, 0 0 40px #e60073, 0 0 50px #e60073, 0 0 60px #e60073, 0 0 70px #e60073;
   font-weight: 900;
+  font-size: 40px;
+  text-shadow: 0 0 10px #fff,
+  0 0 40px #e60073,
+  0 0 50px #e60073;
 }
 .wish {
   /* color: #ffeaa7; */
@@ -49,12 +63,6 @@ span {
   top: 15px;
   font-size: 40px;
   transition: .2s;
-  text-shadow: 0 0 10px #fff, 0 0 20px #fff,
-  0 0 30px #e60073, 
-  0 0 40px #e60073,
-  0 0 50px #e60073, 
-  0 0 60px #e60073,
-  0 0 70px #e60073;
 }
 .by {
   font-family: Sans-Serif;
@@ -83,22 +91,32 @@ span {
   top: 100px;
 }
 .colon {
-  font-size: 25px;
+  font-size: 38px;
 
 }
-/* #bg_video{
-  right: 0;
-  bottom: 0;
-  min-width: 100%;
-  min-height: 100%;
-  z-index: -2;
-  position: fixed;
+.header {
+  width: 100vw;
+  height: 100vh;
+  overflow: hidden;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.header video {
+  position: absolute;
+  left: 0;
+  top: 0;
   object-fit: cover;
-} */
+  width: 100%;
+  height: 100%;
+  pointer-events: none;
+}
 .quotes {
   background: linear-gradient(rgba(0,0,0,0.7), rgba(0,0,0,0.5));
-  margin-top: 60px;
   padding: 10px;
+  position: absolute;
+  top: 70%;
+  left: 0;
 }
 .quotes p {
   font-size: 24px;
@@ -106,7 +124,74 @@ span {
   font-family: 'Dancing Script', cursive;
 
 }
-.change {
+.year {
+  font-family: 'Big Shoulders Inline Text', cursive;
   position: absolute;
-  bottom: -27px;
+  top: 27%;
+  font-size: 60px;
+  color: #00ffb0;
+  letter-spacing: 8px;
+  box-shadow: 0 0 20px 2px #00ffb0;
+}
+#first {
+  height: 100vh;
+  width: 100vw;
+  background: green;
+  z-index: 99;
+  position: absolute;
+  top: 0;
+  left: 0;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  background: #2d3436;
+}
+#start {
+  padding: 10px  25px;
+  background: transparent;
+  border: 4px solid #55efc4;
+  color: #55efc4;
+  font-size: 15PX;
+  animation: animate 5s linear infinite;
+  animation-direction: alternate;
+  box-shadow: 0 0 34px 4px #55efc4;
+}
+@keyframes animate {
+  0% {
+    border: 4px solid #55efc4;
+    color: #55efc4;
+    
+  box-shadow: 0 0 34px 4px #55efc4;
+  
+  }
+  30% {
+    border: 4px solid #fd79a8;
+    color: #fd79a8;
+    
+  box-shadow: 0 0 34px 4px #fd79a8;
+  border-top-left-radius: 20px;
+  border-bottom-right-radius: 20px;
+  }
+  60%{
+    border: 4px solid #ffeaa7;
+    color: #ffeaa7;
+    
+  box-shadow: 0 0 34px 4px #ffeaa7;
+  
+  }
+  90%{
+    border: 4px solid #fab1a0;
+    color: #fab1a0;
+    
+  box-shadow: 0 0 34px 4px #fab1a0;
+
+  }
+  100%{
+    border: 4px solid #55efc4;
+    color: #55efc4;
+    
+  box-shadow: 0 0 34px 4px #55efc4;
+      border-top-right-radius: 20px;
+  border-bottom-left-radius: 20px;
+  }
 }
